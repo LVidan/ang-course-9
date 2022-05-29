@@ -1,8 +1,6 @@
 # AngularDomaci9
 
-1. Data je promenljiva text:
-
-   - text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et finibus nisi."
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et finibus nisi."
 
 2. Prikazati taj text:
 
