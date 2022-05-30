@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
 	title = 'angular-domaci-9';
 
-	text: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et finibus nisi."
+	text: string = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et finibus nisi.";
+	today: number = Date.now();
 }
