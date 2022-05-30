@@ -1,0 +1,31 @@
+<div class="container">
+	<table class="table">
+		<thead>
+			<tr>
+				<ng-container *ngFor="let heading of allBooksTableHeadings">
+					<th scope="col">{{heading}}</th>
+				</ng-container>
+			</tr>
+		</thead>
+		<tbody>
+			<ng-container *ngFor="let book of allBooks">
+				<tr>
+					<th scope="row">{{ randomNum() | currency : 'JPY' : 'symbol'}}</th>
+					<td>{{ book.author }}</td>
+					<td>{{ book.country }}</td>
+					<td>
+						<img src="assets/{{book.imageLink}}" alt="{{ book.title }}" class="rounded w-100">
+					</td>
+					<td>{{ book.language }}</td>
+					<td>
+						<a href="{{ book.link }}">More info...</a>
+					</td>
+					<td>{{ book.pages }}</td>
+					<td>{{ book.title }}</td>
+					<td>{{ book.year }}</td>
+					<td></td>
+				</tr>
+			</ng-container>
+		</tbody>
+	</table>
+</div>
